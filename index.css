@@ -1,0 +1,120 @@
+/* index.css */
+.crypto-grid-container {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  gap: 1px;
+}
+
+.grid-header, .grid-row {
+  display: grid;
+  grid-template-columns: 
+    minmax(160px, 1fr) 
+    minmax(100px, 0.8fr) 
+    minmax(70px, 0.5fr) 
+    minmax(70px, 0.5fr) 
+    minmax(70px, 0.5fr) 
+    minmax(140px, 1fr) 
+    minmax(140px, 1fr) 
+    minmax(160px, 1fr) 
+    minmax(200px, 1fr);
+  background: white;
+  padding: 12px 15px;
+  align-items: center;
+}
+
+.grid-header {
+  background: #f8fafc;
+  font-weight: 500;
+  color: #64748b;
+  font-size: 0.875rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin-info img {
+  width: 28px;
+  height: 28px;
+}
+
+.coin-name {
+  font-weight: 500;
+}
+
+.coin-symbol {
+  color: #64748b;
+  font-size: 0.9em;
+  display: block;
+  /* doing display block will lead to point this symbol in next line  */
+}
+
+.price {
+  font-weight: 500;
+}
+
+.change {
+  font-weight: 500;
+}
+
+.positive {
+  color: #16a34a;
+}
+
+.negative {
+  color: #dc2626;
+}
+
+.chart-cell {
+  padding: 8px;
+  text-align: center;
+  max-width: 200px;
+}
+
+.chart-image {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .crypto-grid-container {
+    overflow-x: auto;
+  }
+  
+  .grid-header, .grid-row {
+    grid-template-columns: 
+      180px 120px 80px 80px 80px 150px 150px 180px 200px;
+    min-width: 1100px;
+  }
+
+  .chart-image {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-header, .grid-row {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .coin-info img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .chart-image {
+    max-width: 100px;
+  }
+}
