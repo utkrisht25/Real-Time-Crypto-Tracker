@@ -35,7 +35,7 @@ export default function App() {
     return () => clearInterval(interval);
   }, [dispatch]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="loading">Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
   return (
