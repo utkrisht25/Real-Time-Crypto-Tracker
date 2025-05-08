@@ -40,7 +40,7 @@ npm run dev
 
 ```
 Demo Video 🎥
-Click here to view demo video [<!-- Replace with your drive link later -->](https://drive.google.com/file/d/1ZlhSocpM1vdhZMu4kXwuN5m6Sd_cdgp1/view?usp=sharing)
+(https://drive.google.com/file/d/1ZlhSocpM1vdhZMu4kXwuN5m6Sd_cdgp1/view?usp=sharing)
 
 Contributing 🤝
 Contributions are welcome! Please open an issue first to discuss what you'd like to change.
